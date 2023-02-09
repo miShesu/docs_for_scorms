@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>HTML document</title>
+<link href="stiles.css" rel="stylesheet" type = "text/css"/>
+</head>
+<body bgcolor =#FFFFFF  >
+ <style>
+   .layer1 {
+    background: #FFFFFF ;
+    /*color: white;*/
+    /*padding: 10px; */
+    margin-bottom: -7px;
+	margin-right: 100px;
+	margin-left: 50px;
+	margin-top: 30px;
+	line-height: 1.5;
+   }
+	
+
+  </style>
+ 
+	<div class ="layer1">
+		<P><font size="5" face="Courier New" >
+            <b>#!/bin/bash<br>
+                images=./<font color="#FF2038">images.list</font> <br>
+                registry=<font color="#FF2038">registry.yourdomain.tld/vantage</font><br>
+                for image in $(cat $images); do <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;docker pull $image <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;docker tag $image $registry/${<font color="#FF2038">image#vantageonprem.azurecr.io/</font>} <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;docker push $registry/${<font color="#FF2038">image#vantageonprem.azurecr.io/</font>} <br>
+                done
+            
+            </b> </font>
+        </p>
+			
+			
+	</div>
+	
+	
+	
+		
+	
+	
+</body>
+</html>
